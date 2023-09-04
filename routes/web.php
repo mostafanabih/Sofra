@@ -17,7 +17,11 @@ use function foo\func;
 
 Route::get('/', function () {
     return view('layouts.signin');
+    
 });
+
+
+
 
 Route::get('/newPassword','Admin\UserController@ResetPassword')->name('newPassword');
 Route::post('/newPassword','Admin\UserController@NewPassword')->name('postNewPassword');
